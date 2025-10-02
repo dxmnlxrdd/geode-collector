@@ -1,13 +1,21 @@
-# geode-collector
+# Geode Collector
 
-##how to use
+Auto teleport & geode collector with server hop.
+
+---
+
+## How to Use
+
+Copy and paste this into your executor / autoexec:
+
+```lua
 getgenv().GeodeConfig = getgenv().GeodeConfig or {
     -- Timers / Delays
-    HopIntervalSeconds = 40,
-    DeadZoneTimeout    = 5,
-    PostTeleportDelay  = 1.5,
-    PerHitDelay        = 0.1,
-    CheckLoopDelay     = 0.2,
+    HopIntervalSeconds = 40,   -- auto hop every X seconds
+    DeadZoneTimeout    = 5,    -- seconds of no geodes before leaving zone
+    PostTeleportDelay  = 1.5,  -- wait after teleport before scanning
+    PerHitDelay        = 0.1,  -- delay between simulated hits
+    CheckLoopDelay     = 0.2,  -- loop check delay
 
     -- Defaults for toggles
     DefaultAutoCollector = true,
@@ -20,7 +28,7 @@ getgenv().GeodeConfig = getgenv().GeodeConfig or {
 }
 
 -- Zone order
-local ZoneGroups = {
+getgenv().ZoneGroups = getgenv().ZoneGroups or {
     {"Frostbitten Path"},
     {"Snowy Shores"},
     {"Caldera Island"},
@@ -28,7 +36,8 @@ local ZoneGroups = {
     {"Rubble Creek"},
     {"Sunset Beach"},
     {"Fortune River Delta"},
-    {"Overgrown Grotto"}
+    {"Overgrown Grotto"},
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/dxmnlxrdd/geode-collector/refs/heads/main/main.lua",true))()
+-- Loader
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dxmnlxrdd/geode-collector/refs/heads/main/main.lua", true))()
