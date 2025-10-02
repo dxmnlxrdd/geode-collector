@@ -4,7 +4,7 @@ Auto teleport & geode collector with server hop.
 
 ---
 
-## How to Use
+## How to Use (config version)
 
 Copy and paste this into your executor / autoexec:
 
@@ -40,3 +40,8 @@ getgenv().ZoneGroups = getgenv().ZoneGroups or {
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/dxmnlxrdd/geode-collector/refs/heads/main/main.lua", true))()
+```
+## Normal Version
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dxmnlxrdd/geode-collector/refs/heads/main/main.lua", true))()
+```
