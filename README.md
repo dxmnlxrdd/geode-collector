@@ -39,5 +39,4 @@ getgenv().ZoneGroups = getgenv().ZoneGroups or {
     {"Overgrown Grotto"},
 }
 
--- Loader
 loadstring(game:HttpGet("https://raw.githubusercontent.com/dxmnlxrdd/geode-collector/refs/heads/main/main.lua", true))()
