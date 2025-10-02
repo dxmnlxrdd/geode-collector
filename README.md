@@ -28,6 +28,7 @@ getgenv().GeodeConfig = getgenv().GeodeConfig or {
 }
 
 -- Zone order, removed if not wanted(auto skip if not unlocked)
+-- it will go in order too
 getgenv().ZoneGroups = getgenv().ZoneGroups or {
 local ZoneGroups = {
     {"Frozen Peak"},
