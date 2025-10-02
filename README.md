@@ -27,16 +27,21 @@ getgenv().GeodeConfig = getgenv().GeodeConfig or {
     ServersPerPage    = 100,
 }
 
--- Zone order
+-- Zone order, removed if not wanted(auto skip if not unlocked)
 getgenv().ZoneGroups = getgenv().ZoneGroups or {
+local ZoneGroups = {
+    {"Frozen Peak"},
     {"Frostbitten Path"},
     {"Snowy Shores"},
+    {"The Magma Furnace"},
     {"Caldera Island"},
+    {"Windswept Beach"},
     {"Fortune River"},
     {"Rubble Creek"},
     {"Sunset Beach"},
     {"Fortune River Delta"},
-    {"Overgrown Grotto"},
+    {"Overgrown Grotto"}
+}
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/dxmnlxrdd/geode-collector/refs/heads/main/main.lua", true))()
