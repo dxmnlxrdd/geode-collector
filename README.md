@@ -28,8 +28,7 @@ getgenv().GeodeConfig = getgenv().GeodeConfig or {
 }
 
 -- Zone order, removed if not wanted(auto skip if not unlocked)
--- IF the location u stay is not the same as the config like example: autosave waypoint from the game after the server hop/stay
--- in caldera island but in the waypoint list your first teleport is frozen peak it will skip (but the second location will teleport normally)
+-- IF the location u stay is not the same as the config like example: autosave waypoint from the game after the server hop/stay in caldera island but in the waypoint list your first teleport is frozen peak it will skip (but the second location will teleport normally)
 getgenv().ZoneGroups = getgenv().ZoneGroups or {
 local ZoneGroups = {
     {"Frozen Peak"},
