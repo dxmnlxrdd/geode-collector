@@ -4,8 +4,9 @@ Auto teleport & geode collector with server hop.
 
 ---
 
-## How to Use (auto farm/config version)
+# How to Use
 
+## Auto farm/Config version
 Copy and paste this into your executor / autoexec:
 
 ```lua
@@ -47,7 +48,7 @@ local ZoneGroups = {
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/dxmnlxrdd/geode-collector/refs/heads/main/main.lua", true))()
 ```
-## Normal Version
+## Normal Version (original, will teleport to all locations+cannot change anything)
 Copy and paste this into your executor
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/dxmnlxrdd/geode-collector/refs/heads/main/main.lua", true))()
